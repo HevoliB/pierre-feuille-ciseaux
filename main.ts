@@ -1,4 +1,13 @@
 let nombre = 0
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
 input.onGesture(Gesture.Shake, function () {
     nombre = randint(0, 2)
     if (nombre == 0) {
